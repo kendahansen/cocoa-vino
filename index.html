@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https:; form-action 'self' https:; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#0a0f1f">
+  <title>Cocoa Vino | Wine Bar, Fire Pit Patio & Live Music in Capitola Village</title>
+  <meta name="description" content="Wine bar in the afternoon, fire pit at sunset, music at seven. Live music Friday to Sunday, DJ Thursdays, bingo and trivia Wednesdays, paint parties Mondays. 312 Capitola Ave.">
+  <meta property="og:title" content="Cocoa Vino | Wine Bar, Fire Pit Patio & Live Music in Capitola Village">
+  <meta property="og:description" content="Wine bar in the afternoon, fire pit at sunset, music at seven. Live music Friday to Sunday, DJ Thursdays, bingo and trivia Wednesdays, paint parties Mondays. 312 Capitola Ave.">
+  <meta property="og:image" content="images/patio.jpg">
+  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav" id="top">
+  <a class="brand" href="index.html"><img class="logo-mark" src="images/logo-mark.svg" alt="">Cocoa <span>Vino</span></a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="nav-links" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="whats-on.html">What's On</a>
+    <a href="wine.html">Wine & Chocolate</a>
+    <a href="private-events.html">Private Events</a>
+    <a href="visit.html">Visit</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero">
+  <div class="hero-inner reveal">
+    <h1>Wine bar in the afternoon. Fire pit at sunset. Music at seven.</h1>
+    <p class="lede">Walk up from the beach for vintage Champagne, rare California, French and Tuscan wines, and a piece of chocolate to go with your glass.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#this-week">Tonight</a>
+      <a class="btn btn-ghost" data-reserve href="visit.html#reserve">Reserve</a>
+    </div>
+    <p class="hero-info"><span id="open-status" aria-live="polite"></span> · <a href="visit.html#hours">312 Capitola Ave</a></p>
+  </div>
+</section>
+
+<section id="this-week" class="section section-dark week-section">
+  <div class="section-head reveal">
+    <h2>This week</h2>
+    <p>Something is on every night. Here are the next seven.</p>
+  </div>
+  <div class="week" id="week"></div>
+  <p class="center"><a class="btn btn-ghost" href="whats-on.html">See the full calendar</a></p>
+</section>
+
+<section id="patio" class="patio">
+  <img class="patio-img" src="images/patio.jpg" alt="The fire table on the patio, with the doors open to the navy and gold bar" loading="lazy">
+  <div class="patio-text reveal">
+    <h2>The Patio</h2>
+    <p>Grab the fire table when the sun starts to drop. The beach is just down the street, and the doors open right into the bar.</p>
+    <a class="btn" href="private-events.html">Book the patio for a party</a>
+  </div>
+</section>
+
+<section id="wine" class="section">
+  <div class="split reveal">
+    <div>
+      <h2>Wine & Chocolate</h2>
+      <ul class="wine-lines" id="wine-lines"></ul>
+      <p class="choc" id="choc-line"></p>
+      <a class="btn btn-ghost-dark" href="wine.html">See wine & chocolate</a>
+    </div>
+    <div class="about-photo"><img src="images/winewall.jpg" alt="The golden-lit wine wall" loading="lazy"></div>
+  </div>
+</section>
+
+<section id="every-week" class="section section-dark">
+  <div class="section-head reveal">
+    <h2>Every week</h2>
+    <p>Learn the rhythm and you'll always know where to be.</p>
+  </div>
+  <div class="rhythm" id="rhythm"></div>
+</section>
+
+<section id="newsletter" class="section section-cocoa">
+  <div class="newsletter reveal">
+    <h2>Get the week's lineup before the village does.</h2>
+    <p>One short email: who's playing, which cause bingo is raising money for, and the Champagne we just opened.</p>
+    <form id="signup" class="signup" novalidate>
+      <label class="sr-only" for="email">Email address</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" maxlength="254" inputmode="email">
+      <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">Send me the lineup</button>
+    </form>
+    <p class="form-msg" id="form-msg" role="status"></p>
+    <p class="privacy-note">We only use your email for this newsletter. We never sell or share it, and you can unsubscribe any time. <a href="privacy.html">Privacy</a></p>
+  </div>
+</section>
+</main>
+
+<nav class="action-bar" aria-label="Quick actions">
+  <a href="index.html#this-week">Tonight</a>
+  <a href="visit.html#hours">Hours</a>
+  <a data-reserve href="visit.html#reserve">Reserve</a>
+  <a data-phone class="primary" hidden>Call</a>
+</nav>
+
+<footer class="footer">
+  <a class="brand" href="index.html"><img class="logo-mark" src="images/logo-mark.svg" alt="">Cocoa <span>Vino</span></a>
+  <p>312 Capitola Ave, Capitola Village · <a data-phone data-phone-text hidden></a></p>
+  <nav aria-label="Footer">
+    <a href="visit.html#hours">Hours</a>
+    <a href="whats-on.html">What's On</a>
+    <a data-social="instagram" target="_blank" rel="noopener" hidden>Instagram</a>
+    <a data-social="facebook" target="_blank" rel="noopener" hidden>Facebook</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+  <p class="fine">You must be 21 or older to buy or drink alcohol. © <span id="year"></span> Cocoa Vino, Capitola</p>
+</footer>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
