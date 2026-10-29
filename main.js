@@ -96,7 +96,7 @@
           ? shows.map((e) => `<p class="day-title">${esc(e.title)}</p><p>${esc(plain(e.time))}</p>`).join("")
           : `<p class="day-title">Wine bar & fire pit</p><p>${esc(hoursText(d))}</p>`;
       const link = shows[0] && safeUrl(shows[0].link);
-      return `<a class="day${n === 0 ? " is-today" : ""}${closure ? " is-closed" : ""}" href="${link ? esc(link) : "whats-on.html"}" ${link ? 'target="_blank" rel="noopener"' : ""}>
+      return `<a class="day${n === 0 ? " is-today" : ""}${closure ? " is-closed" : ""}" href="${link ? esc(link) : "events.html"}" ${link ? 'target="_blank" rel="noopener"' : ""}>
         <span class="day-name">${label}</span><span class="day-date">${monthDay(d)}</span>${body}</a>`;
     }).join("");
   }
@@ -109,19 +109,33 @@
   if (wineLines) wineLines.innerHTML = S.wine.map((w) => `<li><strong>${esc(w.title)}.</strong> ${esc(w.text)}</li>`).join("");
   const choc = $("#choc-line"); if (choc) choc.innerHTML = `<strong>Chocolate.</strong> ${esc(S.chocolate)}`;
 
-  // Wine & Chocolate page
-  const program = $("#program");
-  if (program) program.innerHTML = S.wine.map((w) => `<div class="program-item"><h2>${esc(w.title)}</h2><p>${esc(w.text)}</p></div>`).join("");
-  const list = $("#wine-list");
-  if (list && S.byTheGlass.length) {
-    $("#list-section").hidden = false;
-    list.innerHTML = `<tr><th>Wine</th><th>Glass</th><th>Bottle</th></tr>` + S.byTheGlass.map((w) =>
-      `<tr><td><strong>${esc(w.name)}</strong><br>${esc(w.region || "")}</td><td>${esc(w.glass || "")}</td><td>${esc(w.bottle || "")}</td></tr>`).join("");
+  // Menu page: one section per menu group, with a sticky tab bar that follows your scroll
+  const menu = $("#menu");
+  if (menu) {
+    const price = (label, v) => v ? `<span class="price"><span class="price-label">${label}</span> ${esc(v)}</span>` : "";
+    menu.innerHTML = S.menu.map((sec, n) => `
+      <section class="section menu-section${n % 2 ? " section-dark" : ""}" id="${esc(sec.id)}">
+        <div class="menu-inner">
+          <h2>${esc(sec.title)}</h2>
+          <p class="menu-intro">${esc(sec.intro)}</p>
+          ${sec.items.length ? `<ul class="menu-list">${sec.items.map((w) => `
+            <li>
+              <div><strong>${esc(w.name)}</strong>${w.region ? ` <span class="menu-region">${esc(w.region)}</span>` : ""}${w.note ? `<p>${esc(w.note)}</p>` : ""}</div>
+              <div class="prices">${price("Glass", w.glass)}${price("Bottle", w.bottle)}</div>
+            </li>`).join("")}</ul>`
+          : `<p class="menu-ask">Ask the bar what's open today.</p>`}
+        </div>
+      </section>`).join("");
+    const tabs = $$(".menu-tabs a");
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) tabs.forEach((t) => t.classList.toggle("active", t.getAttribute("href") === "#" + en.target.id));
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    $$(".menu-section").forEach((s) => spy.observe(s));
   }
-  const chocText = $("#choc-text"); if (chocText) chocText.textContent = S.chocolate;
-  const charText = $("#char-text"); if (charText) charText.textContent = S.charcuterie;
 
-  // What's On: full calendar with filters
+  // Events page: full calendar with filters
   const eventList = $("#event-list");
   if (eventList) {
     let filter = "all";

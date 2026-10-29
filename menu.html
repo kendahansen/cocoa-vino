@@ -6,10 +6,10 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self' https:; form-action 'self' https:; base-uri 'self'; object-src 'none'">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#0a0f1f">
-  <title>What's On | Cocoa Vino, Capitola Village</title>
-  <meta name="description" content="Live music Friday to Sunday, DJ Thursdays, charity bingo and trivia Wednesdays, paint parties and classes Mondays at Cocoa Vino in Capitola Village.">
-  <meta property="og:title" content="What's On | Cocoa Vino, Capitola Village">
-  <meta property="og:description" content="Live music Friday to Sunday, DJ Thursdays, charity bingo and trivia Wednesdays, paint parties and classes Mondays at Cocoa Vino in Capitola Village.">
+  <title>Menu | Cocoa Vino: Wine, Champagne & Chocolate in Capitola Village</title>
+  <meta name="description" content="Vintage Champagne, rare California, French and Tuscan wines by the glass and bottle, plus artisan chocolate and charcuterie at Cocoa Vino in Capitola Village.">
+  <meta property="og:title" content="Menu | Cocoa Vino: Wine, Champagne & Chocolate in Capitola Village">
+  <meta property="og:description" content="Vintage Champagne, rare California, French and Tuscan wines by the glass and bottle, plus artisan chocolate and charcuterie at Cocoa Vino in Capitola Village.">
   <meta property="og:image" content="images/patio.jpg">
   <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-page="whats-on">
+<body data-page="menu">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="nav nav-solid" id="top">
@@ -25,41 +25,35 @@
   <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
   <nav class="nav-links" aria-label="Main">
     <a href="index.html">Home</a>
-    <a href="whats-on.html" aria-current="page">What's On</a>
-    <a href="wine.html">Wine & Chocolate</a>
-    <a href="private-events.html">Private Events</a>
+    <a href="events.html">Events</a>
+    <a href="menu.html" aria-current="page">Menu</a>
     <a href="visit.html">Visit</a>
   </nav>
 </header>
 
 <main id="main">
-<section class="page-head">
-  <h1>What's On</h1>
-  <p>Every event at Cocoa Vino, soonest first. Tap any event for tickets or to RSVP.</p>
+<section class="page-head page-head-photo">
+  <h1>Menu</h1>
+  <p>Vintage Champagne, rare California, French and Tuscan wines by the glass or the bottle, plus chocolate and boards to share.</p>
 </section>
 
-<section id="events" class="section section-dark">
-  <div class="filters" id="event-filters">
-    <button class="chip active" data-filter="all">All</button>
-    <button class="chip" data-filter="music">Live Music & DJ</button>
-    <button class="chip" data-filter="games">Bingo & Trivia</button>
-    <button class="chip" data-filter="classes">Paint & Classes</button>
-  </div>
-  <div class="events" id="event-list"></div>
-</section>
+<nav class="menu-tabs" aria-label="Menu sections">
+  <a href="#champagne">Champagne & Sparkling</a>
+  <a href="#glass">By the Glass</a>
+  <a href="#bottle">By the Bottle</a>
+  <a href="#bites">Chocolate & Bites</a>
+</nav>
 
-<section id="newsletter" class="section section-cocoa">
-  <div class="newsletter reveal">
-    <h2>Get the week's lineup before the village does.</h2>
-    <p>One short email: who's playing, which cause bingo is raising money for, and the Champagne we just opened.</p>
-    <form id="signup" class="signup" novalidate>
-      <label class="sr-only" for="email">Email address</label>
-      <input id="email" name="email" type="email" placeholder="you@example.com" required autocomplete="email" maxlength="254" inputmode="email">
-      <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="btn" type="submit">Send me the lineup</button>
-    </form>
-    <p class="form-msg" id="form-msg" role="status"></p>
-    <p class="privacy-note">We only use your email for this newsletter. We never sell or share it, and you can unsubscribe any time. <a href="privacy.html">Privacy</a></p>
+<div id="menu"></div>
+
+<section class="section section-dark">
+  <div class="split">
+    <div>
+      <h2>Ask for a pairing</h2>
+      <p>Tell the bar what you like and they'll pour you something to match, with a piece of chocolate on the side.</p>
+      <a class="btn" href="events.html">See tonight's events</a>
+    </div>
+    <div class="about-photo"><img src="images/interior.jpg" alt="Navy velvet banquette with gold pillows beneath the Cocoa Vino sign" loading="lazy"></div>
   </div>
 </section>
 </main>
@@ -76,7 +70,9 @@
   <p>312 Capitola Ave, Capitola Village · <a data-phone data-phone-text hidden></a></p>
   <nav aria-label="Footer">
     <a href="visit.html#hours">Hours</a>
-    <a href="whats-on.html">What's On</a>
+    <a href="events.html">Events</a>
+    <a href="menu.html">Menu</a>
+    <a href="private-events.html">Private Events</a>
     <a data-social="instagram" target="_blank" rel="noopener" hidden>Instagram</a>
     <a data-social="facebook" target="_blank" rel="noopener" hidden>Facebook</a>
     <a href="privacy.html">Privacy</a>

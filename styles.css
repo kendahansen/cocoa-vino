@@ -254,6 +254,35 @@ p { margin: 0 0 1em; }
   body { padding-bottom: 4.8rem; }
 }
 
+/* Menu page */
+.menu-tabs { position: sticky; top: 64px; z-index: 5; display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; padding: .8rem 16px;
+  background: rgba(255, 250, 243, .97); border-bottom: 1px solid #e6dccb; }
+.menu-tabs a { text-decoration: none; font-weight: 600; color: var(--wine); padding: .5em 1.1em; border-radius: 999px; border: 1.5px solid #d8cbbb; }
+.menu-tabs a:hover, .menu-tabs a.active { background: var(--wine); color: #fff; border-color: var(--wine); }
+.menu-section { scroll-margin-top: 130px; }
+.menu-inner { max-width: 860px; margin: 0 auto; }
+.menu-intro { font-size: 1.15rem; }
+.menu-ask { font-weight: 600; color: var(--gold); }
+.menu-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
+.menu-list li { display: flex; justify-content: space-between; gap: 1.5rem; padding: 1.1rem 0; border-bottom: 1px solid #e6dccb; }
+.section-dark .menu-list li { border-color: var(--line-dark); }
+.menu-list strong { font-size: 1.15rem; }
+.menu-list p { margin: .2rem 0 0; }
+.menu-region { color: var(--gold); font-weight: 600; margin-left: .3rem; }
+.prices { display: flex; gap: 1.2rem; white-space: nowrap; font-weight: 600; }
+.price-label { font-weight: 500; }
+
+/* Private events band at the bottom of Home */
+.private-band { padding: 4.5rem 5vw; color: #fff; text-align: center;
+  background: linear-gradient(180deg, rgba(10, 15, 31, .72), rgba(10, 15, 31, .88)), url("images/firepit.jpg") center/cover; }
+.private-band-inner { max-width: 640px; margin: 0 auto; }
+.private-band p { font-size: 1.15rem; color: var(--cream); }
+@media (max-width: 800px) {
+  .menu-tabs { top: 56px; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; }
+  .menu-tabs a { flex: none; }
+  .menu-list li { flex-direction: column; gap: .4rem; }
+}
+
 /* Privacy page */
 .legal { max-width: 720px; margin: 0 auto; }
 .legal h1 { font-size: clamp(2.4rem, 6vw, 3.5rem); margin-top: 1rem; }

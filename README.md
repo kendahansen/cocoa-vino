@@ -4,12 +4,14 @@ The new site for Cocoa Vino, 312 Capitola Ave, Capitola Village. Plain HTML, CSS
 
 **Positioning:** Wine bar in the afternoon. Fire pit at sunset. Music at seven. The village's good-time wine bar: wine is the excuse, the night is the product.
 
-## Pages (five nav items)
+## Pages
+Top menu: Home · Events · Menu · Visit. Private Events sits at the bottom of Home and in every footer.
+
 | Page | File | What's on it |
 |---|---|---|
 | Home | `index.html` | Hero (positioning line, Tonight / Reserve, today's hours and address), This Week (next 7 days from the events data), The Patio, Wine & Chocolate, Every Week, newsletter |
-| What's On | `whats-on.html` | Full calendar with filters, Tickets & RSVP links and Add to calendar |
-| Wine & Chocolate | `wine.html` | Champagne, California, France, Tuscany, the glass & bottle list, chocolate, charcuterie |
+| Events | `events.html` | Full calendar with filters, Tickets & RSVP links and Add to calendar |
+| Menu | `menu.html` | Champagne & Sparkling, By the Glass, By the Bottle, Chocolate & Bites, with a sticky section bar |
 | Private Events | `private-events.html` | Patio parties, buyouts, birthdays, corporate, one request form |
 | Visit | `visit.html` | Hours, walk-ins vs reservations, parking, map, phone, Instagram |
 
@@ -37,7 +39,7 @@ Almost everything lives in **`content.js`**: phone, Instagram, hours, the weekly
 - [ ] Confirm hours (currently 3 pm to 10 pm daily, from an old listing)
 - [ ] Confirm the Instagram handle (`cocoavinocapitola` is a guess from the event pages)
 - [ ] Name the chocolate maker in `content.js` (`chocolate`)
-- [ ] Add the real by-the-glass and bottle list (`byTheGlass`), or leave it empty to show the program only
+- [ ] Add the real wine list to `menu` in `content.js` (name, region, note, glass and bottle price)
 - [ ] Connect the newsletter: paste a Mailchimp, Flodesk or Kit form URL into `newsletterFormAction`
 - [ ] Connect private event requests: paste a Formspree or Basin URL into `privateEventsFormAction`. Until then, the form asks guests to call.
 - [ ] Online reservations link, if any (`reservationsUrl`). Without it, Reserve goes to the Visit page.
