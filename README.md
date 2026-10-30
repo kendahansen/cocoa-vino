@@ -18,6 +18,8 @@ Top menu: Home · Events · Menu · Visit. Private Events sits at the bottom of 
 The header, footer and phone bar are repeated in each page. If you change one, change all five.
 
 ## Updating content
+After changing `styles.css`, `main.js` or `content.js`, bump the `?v=` number on their links in the HTML pages so visitors get the new version right away instead of a cached copy.
+
 Almost everything lives in **`content.js`**: phone, Instagram, hours, the weekly rhythm, the wine program, the chocolate line, and every event.
 
 **Events:** add `{ date, time, title, badge, text, image, link }`. They sort by date on their own, past dates disappear, and a series ("Multiple Dates") is one entry per date. Badges: Live Music, DJ, Bingo, Trivia, Paint Party, Class, Closed. A "Closed" entry marks that day closed everywhere on the site.
