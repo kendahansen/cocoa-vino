@@ -48,9 +48,9 @@ High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost bod
 - [ ] Add the real wine list to `menu` in `content.js` (name, region, note, glass and bottle price)
 - [ ] Connect the newsletter to Kit (below)
 - [ ] Connect the contact form: paste a Formspree or Basin URL into `contactFormAction`. Until then, it asks people to call.
-- [ ] Add the email address to `email` in `content.js` if he wants it shown.
+- [x] Email: cocoavinocapitola@gmail.com
 - [ ] Connect private event requests: paste a Formspree or Basin URL into `privateEventsFormAction`. Until then, the form asks guests to call.
-- [ ] Online reservations link, if any (`reservationsUrl`). Without it, Reserve goes to the Visit page.
+- [ ] Reservations: Reserve currently opens the Wix booking page on the old site. Switch `reservationsUrl` to OpenTable or Tock before the domain moves.
 - [ ] Priority photos still wanted: fire pit at dusk with people, the room full on a music night, a single pour of Champagne, the village or beach from the door, the chocolate
 - [ ] Logo: the wordmark (COCOA VINO / CAPITOLA VILLAGE in Cinzel) is the logo for now, with `images/monogram.svg` as the browser icon. Swap in an official logo file if there is one.
 

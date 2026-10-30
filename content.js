@@ -21,10 +21,12 @@ window.SITE = {
 
   // Contact & social. An empty value ("") hides its button or link.
   phone: "(831) 854-2777",
-  email: "",            // e.g. "hello@cocoavinocapitola.com". Empty = the email line stays hidden.
+  email: "cocoavinocapitola@gmail.com",
   instagram: "https://www.instagram.com/cocoavinocapitola",   // CONFIRM handle
   facebook: "",
-  reservationsUrl: "",  // online booking link, if he uses one. Empty = Reserve goes to the Visit page.
+  // Current booking page (Wix Table Reservations on the old site). Replace with the
+  // OpenTable or Tock link when that is set up; this one stops working if the domain leaves Wix.
+  reservationsUrl: "https://www.cocoavinocapitola.com/reservations",
 
   // 0 = Sunday ... 6 = Saturday. 24h times. null = closed that day.
   // Closed Monday and Tuesday. CONFIRM the other days (listed as 3 pm to 10 pm).
