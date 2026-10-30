@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="31" fill="#0a0f1f"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#c9a35c" stroke-width="1.5"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#c9a35c" stroke-width=".6"/>
+  <text x="32" y="41" text-anchor="middle" font-family="Didot, 'Bodoni 72', 'Bodoni MT', Georgia, serif" font-size="24" letter-spacing="1" fill="#e2c27e">CV</text>
+</svg>

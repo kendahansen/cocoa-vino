@@ -11,24 +11,31 @@
   <meta property="og:title" content="Menu | Cocoa Vino: Wine, Champagne & Chocolate in Capitola Village">
   <meta property="og:description" content="Vintage Champagne, rare California, French and Tuscan wines by the glass and bottle, plus artisan chocolate and charcuterie at Cocoa Vino in Capitola Village.">
   <meta property="og:image" content="images/patio.jpg">
-  <link rel="icon" href="images/logo-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="images/monogram.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Cinzel:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="menu">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="nav nav-solid" id="top">
-  <a class="brand" href="index.html"><img class="logo-mark" src="images/logo-mark.svg" alt="">Cocoa <span>Vino</span></a>
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-  <nav class="nav-links" aria-label="Main">
+  <nav class="nav-group nav-left" aria-label="Main">
     <a href="index.html">Home</a>
     <a href="events.html">Events</a>
     <a href="menu.html" aria-current="page">Menu</a>
-    <a href="visit.html">Visit</a>
   </nav>
+  <a class="brand" href="index.html" aria-label="Cocoa Vino, home">
+    <span class="brand-rule" aria-hidden="true"></span>
+    <span class="brand-name">Cocoa Vino</span>
+    <span class="brand-sub">Capitola Village</span>
+  </a>
+  <nav class="nav-group nav-right" aria-label="Visit and reserve">
+    <a href="visit.html">Visit</a>
+    <a class="btn btn-small nav-reserve" data-reserve href="visit.html#reserve">Reserve</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
 
 <main id="main">
@@ -66,7 +73,7 @@
 </nav>
 
 <footer class="footer">
-  <a class="brand" href="index.html"><img class="logo-mark" src="images/logo-mark.svg" alt="">Cocoa <span>Vino</span></a>
+  <a class="brand brand-foot" href="index.html"><span class="brand-name">Cocoa Vino</span><span class="brand-sub">Capitola Village</span></a>
   <p>312 Capitola Ave, Capitola Village · <a data-phone data-phone-text hidden></a></p>
   <nav aria-label="Footer">
     <a href="visit.html#hours">Hours</a>

@@ -22,6 +22,9 @@ Almost everything lives in **`content.js`**: phone, Instagram, hours, the weekly
 
 **Events:** add `{ date, time, title, badge, text, image, link }`. They sort by date on their own, past dates disappear, and a series ("Multiple Dates") is one entry per date. Badges: Live Music, DJ, Bingo, Trivia, Paint Party, Class, Closed. A "Closed" entry marks that day closed everywhere on the site.
 
+## Look
+High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost body text, gold flourishes (`images/flourish.svg`), velvet navy and cream. The header is a solid bar with the wordmark centered, Home / Events / Menu on the left, Visit and Reserve on the right.
+
 ## Voice rules (from the site direction)
 - Specific over adjective. Every sentence should have something you could photograph.
 - Second person, present tense, short. Name the nights.
@@ -44,7 +47,7 @@ Almost everything lives in **`content.js`**: phone, Instagram, hours, the weekly
 - [ ] Connect private event requests: paste a Formspree or Basin URL into `privateEventsFormAction`. Until then, the form asks guests to call.
 - [ ] Online reservations link, if any (`reservationsUrl`). Without it, Reserve goes to the Visit page.
 - [ ] Priority photos still wanted: fire pit at dusk with people, the room full on a music night, a single pour of Champagne, the village or beach from the door, the chocolate
-- [ ] Logo: `images/logo-mark.svg` is a drawn stand-in. Swap in the real file.
+- [ ] Logo: the wordmark (COCOA VINO / CAPITOLA VILLAGE in Cinzel) is the logo for now, with `images/monogram.svg` as the browser icon. Swap in an official logo file if there is one.
 
 ## Preview locally
 ```bash

@@ -30,13 +30,12 @@
   }
 
   // ---------- Nav ----------
-  const toggle = $(".nav-toggle");
-  const links = $(".nav-links");
-  const closeNav = () => { links.classList.remove("open"); toggle.setAttribute("aria-expanded", false); };
-  toggle.addEventListener("click", () => toggle.setAttribute("aria-expanded", links.classList.toggle("open")));
-  links.addEventListener("click", (e) => { if (e.target.tagName === "A") closeNav(); });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNav(); });
   const nav = $(".nav");
+  const toggle = $(".nav-toggle");
+  const closeNav = () => { nav.classList.remove("open"); toggle.setAttribute("aria-expanded", false); };
+  toggle.addEventListener("click", () => toggle.setAttribute("aria-expanded", nav.classList.toggle("open")));
+  nav.addEventListener("click", (e) => { if (e.target.closest(".nav-group a")) closeNav(); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNav(); });
   addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 40), { passive: true });
 
   // ---------- Hours & open status ----------
