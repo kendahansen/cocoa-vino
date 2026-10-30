@@ -24,6 +24,11 @@
     const u = safeUrl(S[a.dataset.social]);
     if (u) { a.href = u; a.hidden = false; }
   });
+  const email = /^[^\s@<>"]+@[^\s@<>"]+\.[a-z]{2,}$/i.test(S.email || "") ? S.email : "";
+  $$("[data-email]").forEach((a) => { if (email) { a.href = "mailto:" + email; a.textContent = email; } });
+  $$("[data-email-row]").forEach((li) => { li.hidden = !email; });
+  $$("[data-handle]").forEach((a) => { const u = safeUrl(S.instagram); if (u) a.textContent = "@" + u.replace(/\/+$/, "").split("/").pop(); });
+  $$("[data-insta-row]").forEach((li) => { li.hidden = !safeUrl(S.instagram); });
   const reserveUrl = safeUrl(S.reservationsUrl);
   if (reserveUrl) {
     $$("[data-reserve], [data-reserve-online]").forEach((a) => { a.href = reserveUrl; a.target = "_blank"; a.rel = "noopener"; a.hidden = false; });
@@ -297,6 +302,32 @@
     } catch { say(msg, "That didn't go through. Please try again or give us a call."); }
     finally { btn.disabled = false; }
   });
+
+  // Contact page: show the extra fields for musicians and hosts
+  const contact = $("#contact-form");
+  if (contact) {
+    const topic = $("#contact-topic");
+    const showExtras = () => $$("[data-topic-show]").forEach((el) => { el.hidden = !el.dataset.topicShow.split(" ").includes(topic.value); });
+    const params = new URLSearchParams(location.search);
+    if (params.get("topic") && [...topic.options].some((o) => o.value === params.get("topic"))) topic.value = params.get("topic");
+    topic.addEventListener("change", showExtras); showExtras();
+    contact.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const f = contact, msg = $("#contact-msg");
+      if (f.company.value) return;
+      if (!f.name.value.trim() || !validEmail(f.email.value.trim()) || !f.message.value.trim())
+        return say(msg, "Please add your name, email and a short message.");
+      if (!S.contactFormAction)
+        return say(msg, tel ? `Thanks, ${f.name.value.trim()}. Our online form isn't connected yet, so please call ${S.phone}.` : "Our online form isn't connected yet. Please stop by the bar.", true);
+      const btn = f.querySelector("button"); btn.disabled = true;
+      try {
+        await fetch(S.contactFormAction, { method: "POST", body: new FormData(f), mode: "no-cors" });
+        say(msg, "Thanks. Your note is on its way and we'll get back to you soon.", true);
+        f.reset(); showExtras();
+      } catch { say(msg, "That didn't go through. Please try again or give us a call."); }
+      finally { btn.disabled = false; }
+    });
+  }
 
   // ---------- Fade-in on scroll ----------
   const io = new IntersectionObserver((entries) => {

@@ -12,6 +12,7 @@ Top menu: Home · Events · Menu · Visit. Private Events sits at the bottom of 
 | Home | `index.html` | Hero (positioning line, Tonight / Reserve, today's hours and address), This Week (next 7 days from the events data), The Patio, Wine & Chocolate, Every Week, newsletter |
 | Events | `events.html` | Full calendar with filters, Tickets & RSVP links and Add to calendar |
 | Menu | `menu.html` | Champagne & Sparkling, By the Glass, By the Bottle, Chocolate & Bites, with a sticky section bar |
+| Contact | `contact.html` | Phone, location, Instagram, hours, and a form with options for questions, performers (bands, musicians), class teachers and event hosts, and private events |
 | Private Events | `private-events.html` | Patio parties, buyouts, birthdays, corporate, one request form |
 | Visit | `visit.html` | Hours, walk-ins vs reservations, parking, map, phone, Instagram |
 
@@ -46,6 +47,8 @@ High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost bod
 - [ ] Name the chocolate maker in `content.js` (`chocolate`)
 - [ ] Add the real wine list to `menu` in `content.js` (name, region, note, glass and bottle price)
 - [ ] Connect the newsletter to Kit (below)
+- [ ] Connect the contact form: paste a Formspree or Basin URL into `contactFormAction`. Until then, it asks people to call.
+- [ ] Add the email address to `email` in `content.js` if he wants it shown.
 - [ ] Connect private event requests: paste a Formspree or Basin URL into `privateEventsFormAction`. Until then, the form asks guests to call.
 - [ ] Online reservations link, if any (`reservationsUrl`). Without it, Reserve goes to the Visit page.
 - [ ] Priority photos still wanted: fire pit at dusk with people, the room full on a music night, a single pour of Champagne, the village or beach from the door, the chocolate

@@ -15,8 +15,13 @@ window.SITE = {
   // Until it is set, the form asks the guest to call instead.
   privateEventsFormAction: "",
 
+  // Contact form: paste a form service URL (Formspree, Basin, etc.).
+  // Until it is set, the form asks people to call instead.
+  contactFormAction: "",
+
   // Contact & social. An empty value ("") hides its button or link.
   phone: "(831) 854-2777",
+  email: "",            // e.g. "hello@cocoavinocapitola.com". Empty = the email line stays hidden.
   instagram: "https://www.instagram.com/cocoavinocapitola",   // CONFIRM handle
   facebook: "",
   reservationsUrl: "",  // online booking link, if he uses one. Empty = Reserve goes to the Visit page.
