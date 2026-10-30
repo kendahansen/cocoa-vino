@@ -36,4 +36,4 @@ A high-end wine bar with a fire pit patio in Capitola Village, a short walk from
 - **Colors:** velvet navy `#0a0f1f` / `#1b2650`, gold `#c9a35c` / `#e2c27e`, cream `#fffaf3`.
 - **Type:** Bodoni Moda for headlines, Cinzel capitals for the wordmark, navigation, buttons and labels, Jost for body text.
 - **Details:** a short gold bar under titles, a gold line under the header, squared buttons. No ornaments or flourishes.
-- **Photos:** real photos of the space, wine and food. Wine or the patio in every shot. No stock, and no AI-generated people.
+- **Photos:** the space, the wine and the food. Wine or the patio in every shot.
