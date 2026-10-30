@@ -43,11 +43,18 @@ High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost bod
 - [ ] Confirm the Instagram handle (`cocoavinocapitola` is a guess from the event pages)
 - [ ] Name the chocolate maker in `content.js` (`chocolate`)
 - [ ] Add the real wine list to `menu` in `content.js` (name, region, note, glass and bottle price)
-- [ ] Connect the newsletter: paste a Mailchimp, Flodesk or Kit form URL into `newsletterFormAction`
+- [ ] Connect the newsletter to Kit (below)
 - [ ] Connect private event requests: paste a Formspree or Basin URL into `privateEventsFormAction`. Until then, the form asks guests to call.
 - [ ] Online reservations link, if any (`reservationsUrl`). Without it, Reserve goes to the Visit page.
 - [ ] Priority photos still wanted: fire pit at dusk with people, the room full on a music night, a single pour of Champagne, the village or beach from the door, the chocolate
 - [ ] Logo: the wordmark (COCOA VINO / CAPITOLA VILLAGE in Cinzel) is the logo for now, with `images/monogram.svg` as the browser icon. Swap in an official logo file if there is one.
+
+## Connecting Kit (newsletter)
+1. In Kit, go to **Grow → Landing Pages & Forms → Create new → Form → Inline**, pick any template, and save it.
+2. Click **Publish → HTML** and find `action="https://app.kit.com/forms/1234567/subscriptions"` in the code.
+3. Paste that address into `newsletterFormAction` in `content.js`.
+
+The site's own signup box (styled to match) then sends each email straight to that Kit form. Only the email address is sent.
 
 ## Preview locally
 ```bash

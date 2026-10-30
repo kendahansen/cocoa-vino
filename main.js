@@ -257,7 +257,9 @@
     if (!S.newsletterFormAction) return say(msg, "Our email list isn't connected yet. Follow us on Instagram for this week's lineup.", true);
     const btn = signup.querySelector("button"); btn.disabled = true;
     try {
-      await fetch(S.newsletterFormAction, { method: "POST", body: new FormData(signup), mode: "no-cors" });
+      const data = new FormData();
+      data.append(S.newsletterEmailField || "email", signup.email.value.trim());
+      await fetch(S.newsletterFormAction, { method: "POST", body: data, mode: "no-cors" });
       say(msg, "You're on the list. See you at the fire pit.", true);
       signup.reset();
     } catch { say(msg, "That didn't go through. Please try again."); }

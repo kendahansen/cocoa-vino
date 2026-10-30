@@ -5,9 +5,11 @@
 // ─────────────────────────────────────────────────────────────
 
 window.SITE = {
-  // Newsletter: paste your provider's form URL here (see README).
+  // Newsletter (Kit). Paste the form's address here, like
+  // "https://app.kit.com/forms/1234567/subscriptions" (see README: Connecting Kit).
   // Until it is set, signups are not saved anywhere.
   newsletterFormAction: "",
+  newsletterEmailField: "email_address",   // the field name Kit expects
 
   // Private events form: paste a form service URL (Formspree, Basin, etc.).
   // Until it is set, the form asks the guest to call instead.
