@@ -42,7 +42,7 @@ High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost bod
 - Search engines get BarOrPub structured data with hours, plus an Event entry for each calendar item.
 
 ## Before launch
-- [ ] Confirm hours (currently 3 pm to 10 pm daily, from an old listing)
+- [ ] Confirm hours: closed Monday and Tuesday; Wednesday to Sunday listed as 3 pm to 10 pm
 - [ ] Confirm the Instagram handle (`cocoavinocapitola` is a guess from the event pages)
 - [ ] Name the chocolate maker in `content.js` (`chocolate`)
 - [ ] Add the real wine list to `menu` in `content.js` (name, region, note, glass and bottle price)

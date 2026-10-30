@@ -64,7 +64,13 @@
     if (closure) html = `<span class="dot"></span> Closed today: ${esc(closedName(closure))}`;
     else if (h && mins >= toMin(h[0]) && mins < toMin(h[1])) html = `<span class="dot open"></span> Open now until ${fmt(h[1])}`;
     else if (h && mins < toMin(h[0])) html = `<span class="dot"></span> Open today ${fmt(h[0])} to ${fmt(h[1])}`;
-    else html = `<span class="dot"></span> Closed now. Tomorrow: ${hoursText(new Date(today.getTime() + 864e5))}`;
+    else {
+      let n = 1, d;
+      do { d = new Date(today.getTime() + n * 864e5); n++; } while (hoursText(d) === "Closed" && n < 9);
+      const label = n === 2 ? "tomorrow" : d.toLocaleString("en-US", { weekday: "long" });
+      const h2 = S.hours[d.getDay()];
+      html = `<span class="dot"></span> Closed now. Open ${label} at ${fmt(h2[0])}`;
+    }
     status.innerHTML = html;
   }
   const hoursTable = $("#hours-table");
@@ -98,7 +104,9 @@
         ? `<p class="day-title">Closed</p><p>${esc(closedName(closure))}</p>`
         : shows.length
           ? shows.map((e) => `<p class="day-title">${esc(e.title)}</p><p>${esc(plain(e.time))}</p>`).join("")
-          : `<p class="day-title">Wine bar & fire pit</p><p>${esc(hoursText(d))}</p>`;
+          : hoursText(d) === "Closed"
+            ? `<p class="day-title">Closed</p><p>See you later this week</p>`
+            : `<p class="day-title">Wine bar & fire pit</p><p>${esc(hoursText(d))}</p>`;
       const link = shows[0] && safeUrl(shows[0].link);
       return `<a class="day${n === 0 ? " is-today" : ""}${closure ? " is-closed" : ""}" href="${link ? esc(link) : "events.html"}" ${link ? 'target="_blank" rel="noopener"' : ""}>
         <span class="day-name">${label}</span><span class="day-date">${monthDay(d)}</span>${body}</a>`;

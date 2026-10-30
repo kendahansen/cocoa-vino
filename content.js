@@ -27,11 +27,11 @@ window.SITE = {
   reservationsUrl: "",  // online booking link, if he uses one. Empty = Reserve goes to the Visit page.
 
   // 0 = Sunday ... 6 = Saturday. 24h times. null = closed that day.
-  // CONFIRM: public listings say 3pm to 10pm daily.
+  // Closed Monday and Tuesday. CONFIRM the other days (listed as 3 pm to 10 pm).
   hours: {
     0: ["15:00", "22:00"],
-    1: ["15:00", "22:00"],
-    2: ["15:00", "22:00"],
+    1: null,   // closed Mondays (special events like paint parties still show on the calendar)
+    2: null,   // closed Tuesdays
     3: ["15:00", "22:00"],
     4: ["15:00", "22:00"],
     5: ["15:00", "22:00"],
@@ -40,7 +40,7 @@ window.SITE = {
 
   // The weekly rhythm (Home: "Every Week")
   weekly: [
-    { day: "Mondays", title: "Paint parties & classes", text: "Paint a layered wood piece or decorate a gingerbread house with a glass in hand. Supplies are on us." },
+    { day: "Select Mondays", title: "Paint parties & classes", text: "Paint a layered wood piece or decorate a gingerbread house with a glass in hand. Supplies are on us." },
     { day: "Wednesdays", title: "Bingo & trivia", text: "Every bingo night raises money for a local cause. Trivia nights bring five rounds, prizes and a cheese board." },
     { day: "Thursdays", title: "House DJ", text: "Chill house and jazzy grooves from 7 pm while the fire pit burns." },
     { day: "Friday to Sunday", title: "Live music", text: "Local guitarists, jazz duos and Hawaiian harmonies, inside and on the patio." },
