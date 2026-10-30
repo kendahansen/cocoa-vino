@@ -67,12 +67,12 @@ window.SITE = {
     { id: "cult", title: "Cult Favorites & Local Picks", intro: "The hard-to-find bottles: cult California names like Kosta Browne, Rare Champagne, and our favorite Santa Cruz Mountains producers.", items: [] },
     { id: "glass", title: "By the Glass", intro: "Rare California, French and Tuscan pours that change with the season.", items: [] },
     { id: "bottle", title: "By the Bottle & To Go", intro: "Pick a bottle from the wine wall. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
-    { id: "bites", title: "Boards, Bites & Chocolate", image: "images/board.jpg", imageAlt: "A cheese, charcuterie and chocolate board with two glasses of red wine at Cocoa Vino",
-      intro: "Wine needs a wingman. Build a board for the table, grab a few snacks for the fire pit, and save room for chocolate.", items: [
+    { id: "bites", title: "Charcuterie Boards, Bites & Chocolates", image: "images/board.jpg", imageAlt: "A cheese, charcuterie and chocolate board with two glasses of red wine at Cocoa Vino",
+      intro: "Wine needs a wingman. Build a board for the table, grab a few snacks for the fire pit, and save room for chocolates.", items: [
       { name: "Cheese board", region: "", note: "A spread of soft, aged and blue cheeses with crackers, honey and fruit.", glass: "", bottle: "" },   // add price
       { name: "Charcuterie board", region: "", note: "Prosciutto, salami and cheese, made for sharing.", glass: "", bottle: "" },   // add price
       { name: "Snacks", region: "", note: "Olives, nuts and crackers for when you just want a little something.", glass: "", bottle: "" },   // CONFIRM what's offered
-      { name: "Chocolate", region: "", note: "Truffles and dark chocolate by the piece. Ask the bar what pairs with your glass.", glass: "", bottle: "" },   // NAME the maker, add price
+      { name: "Chocolates", region: "", note: "Truffles and dark chocolate by the piece. Ask the bar what pairs with your glass.", glass: "", bottle: "" },   // NAME the maker, add price
     ] },
   ],
   chocolate: "Cheese and charcuterie boards, snacks for the table, and chocolate by the piece. Ask the bar what pairs with your glass.",   // NAME the maker

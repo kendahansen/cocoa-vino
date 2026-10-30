@@ -11,7 +11,7 @@ Top menu: Home · Events · Menu · Visit. Private Events sits at the bottom of 
 |---|---|---|
 | Home | `index.html` | Hero (positioning line, Tonight / Reserve, today's hours and address), This Week (next 7 days from the events data), The Patio, Wine & Chocolate, Every Week, newsletter |
 | Events | `events.html` | Full calendar with filters, Tickets & RSVP links and Add to calendar |
-| Menu | `menu.html` | Champagne & Sparkling, By the Glass, By the Bottle & To Go, Boards, Bites & Chocolate, with a sticky section bar |
+| Menu | `menu.html` | Champagne & Sparkling, By the Glass, By the Bottle & To Go, Charcuterie Boards, Bites & Chocolates, with a sticky section bar |
 | Contact | `contact.html` | Phone, location, Instagram, hours, and a form with options for questions, performers (bands, musicians), class teachers and event hosts, and private events |
 | Private Events | `private-events.html` | Patio parties, buyouts, birthdays, corporate, one request form |
 | Visit | `visit.html` | Hours, walk-ins vs reservations, parking, map, phone, Instagram |
