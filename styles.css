@@ -90,10 +90,10 @@ p { margin: 0 0 1em; }
   background: radial-gradient(ellipse at 20% 0%, rgba(52, 72, 150, .5), transparent 60%), linear-gradient(160deg, var(--cocoa-2), var(--cocoa)); }
 .page-head p { font-size: 1.2rem; max-width: 640px; margin: 0 auto; color: var(--cream); }
 .page-head-photo { background: linear-gradient(180deg, rgba(10, 15, 31, .7), rgba(10, 15, 31, .88)), url("images/winewall.jpg") center/cover; }
-.page-head-patio { background: linear-gradient(180deg, rgba(10, 15, 31, .25), rgba(10, 15, 31, .7)), url("images/courtyard.jpg") center 38%/cover; }
+.page-head-patio { background: linear-gradient(180deg, rgba(10, 15, 31, .25), rgba(10, 15, 31, .65)), url("images/patio.jpg") center 42%/cover; }
 .page-head-bar { background: linear-gradient(180deg, rgba(10, 15, 31, .3), rgba(10, 15, 31, .72)), url("images/bar.jpg") center 45%/cover; }
 .page-head-sign { background: linear-gradient(180deg, rgba(10, 15, 31, .35), rgba(10, 15, 31, .75)), url("images/interior.jpg") center 70%/cover; }
-.page-head-entrance { background: linear-gradient(180deg, rgba(10, 15, 31, .3), rgba(10, 15, 31, .72)), url("images/patio.jpg") center 40%/cover; }
+.page-head-entrance { background: linear-gradient(180deg, rgba(10, 15, 31, .3), rgba(10, 15, 31, .72)), url("images/patio-golden.jpg") center 55%/cover; }
 .page-head-room { background: linear-gradient(180deg, rgba(10, 15, 31, .35), rgba(10, 15, 31, .75)), url("images/interior.jpg") center 70%/cover; }
 
 /* Sections */
@@ -334,7 +334,7 @@ p { margin: 0 0 1em; }
 
 /* Private events band at the bottom of Home */
 .private-band { padding: 4.5rem 5vw; color: #fff; text-align: center;
-  background: linear-gradient(180deg, rgba(10, 15, 31, .55), rgba(10, 15, 31, .85)), url("images/courtyard.jpg") center 55%/cover; }
+  background: linear-gradient(180deg, rgba(10, 15, 31, .45), rgba(10, 15, 31, .8)), url("images/patio.jpg") center 42%/cover; }
 .private-band-inner { max-width: 640px; margin: 0 auto; }
 .private-band p { font-size: 1.15rem; color: var(--cream); }
 @media (max-width: 800px) {
