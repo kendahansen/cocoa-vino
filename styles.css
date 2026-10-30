@@ -129,7 +129,16 @@ p { margin: 0 0 1em; }
 /* Wine & chocolate */
 .wine-lines { list-style: none; padding: 0; margin: 0 0 1.2rem; }
 .wine-lines li { padding: .8rem 0; border-bottom: 1px solid #e6dccb; font-size: 1.08rem; }
-.choc { font-size: 1.08rem; margin-bottom: 1.6rem; }
+/* Home: Wine, Charcuterie & Chocolates. Title + photo on top, descriptions in a grid below */
+.wine-top { max-width: 1200px; margin: 0 auto 3.5rem; display: grid; grid-template-columns: 1fr 1.15fr; gap: 4rem; align-items: center; }
+.wine-intro { font-size: 1.2rem; margin-bottom: 1.6rem; }
+.wine-grid { list-style: none; padding: 0; margin: 0 auto; max-width: 1200px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 3rem; }
+.wine-grid li { padding: 1.6rem 0; border-top: 2px solid var(--gold); }
+.wine-grid h3 { font-size: 1.45rem; margin-bottom: .4rem; }
+.wine-grid p { margin: 0; font-size: 1.05rem; }
+.wine-grid li:last-child:nth-child(3n+1) { grid-column: 1 / -1; }
+@media (max-width: 1000px) { .wine-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 800px) { .wine-top { grid-template-columns: 1fr; gap: 2rem; margin-bottom: 2rem; } .wine-grid { grid-template-columns: 1fr; } }
 .about-photo { position: relative; isolation: isolate; }
 .about-photo img { width: 100%; display: block; border-radius: 2px; border: 1px solid rgba(201, 163, 92, .5); box-shadow: 0 30px 60px rgba(10, 15, 31, .35); }
 .program { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 4rem; }
