@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kendahansen.github.io/cocoa-vino/sitemap.xml

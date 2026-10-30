@@ -288,13 +288,15 @@ p { margin: 0 0 1em; }
 .menu-section { scroll-margin-top: 130px; }
 .menu-inner { max-width: 860px; margin: 0 auto; }
 .menu-intro { font-size: 1.15rem; }
-.menu-ask { font-weight: 600; color: var(--gold); }
+.menu-ask { font-weight: 600; color: #7d5a1e; }
+.section-dark .menu-ask { color: var(--gold-2); }
 .menu-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
 .menu-list li { display: flex; justify-content: space-between; gap: 1.5rem; padding: 1.1rem 0; border-bottom: 1px solid #e6dccb; }
 .section-dark .menu-list li { border-color: var(--line-dark); }
 .menu-list strong { font-size: 1.15rem; }
 .menu-list p { margin: .2rem 0 0; }
-.menu-region { color: var(--gold); font-weight: 600; margin-left: .3rem; }
+.menu-region { color: #7d5a1e; font-weight: 600; margin-left: .3rem; }
+.section-dark .menu-region { color: var(--gold-2); }
 .prices { display: flex; gap: 1.2rem; white-space: nowrap; font-weight: 600; }
 .price-label { font-weight: 500; }
 
