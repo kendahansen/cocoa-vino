@@ -90,7 +90,10 @@ p { margin: 0 0 1em; }
   background: radial-gradient(ellipse at 20% 0%, rgba(52, 72, 150, .5), transparent 60%), linear-gradient(160deg, var(--cocoa-2), var(--cocoa)); }
 .page-head p { font-size: 1.2rem; max-width: 640px; margin: 0 auto; color: var(--cream); }
 .page-head-photo { background: linear-gradient(180deg, rgba(10, 15, 31, .7), rgba(10, 15, 31, .88)), url("images/winewall.jpg") center/cover; }
-.page-head-patio { background: linear-gradient(180deg, rgba(10, 15, 31, .3), rgba(10, 15, 31, .7)), url("images/patio.jpg") center 40%/cover; }
+.page-head-patio { background: linear-gradient(180deg, rgba(10, 15, 31, .25), rgba(10, 15, 31, .7)), url("images/courtyard.jpg") center 38%/cover; }
+.page-head-bar { background: linear-gradient(180deg, rgba(10, 15, 31, .3), rgba(10, 15, 31, .72)), url("images/bar.jpg") center 45%/cover; }
+.page-head-sign { background: linear-gradient(180deg, rgba(10, 15, 31, .2), rgba(10, 15, 31, .6)), url("images/sconce.jpg") center 32%/cover; }
+.page-head-entrance { background: linear-gradient(180deg, rgba(10, 15, 31, .3), rgba(10, 15, 31, .72)), url("images/patio.jpg") center 40%/cover; }
 .page-head-room { background: linear-gradient(180deg, rgba(10, 15, 31, .35), rgba(10, 15, 31, .75)), url("images/interior.jpg") center 70%/cover; }
 
 /* Sections */
@@ -197,7 +200,7 @@ p { margin: 0 0 1em; }
 .map { aspect-ratio: 1; }
 .map-load { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .4rem;
   border: 1.5px solid rgba(201, 163, 92, .5); border-radius: 2px; cursor: pointer; color: var(--cream); font: 500 1.05rem var(--sans);
-  background: linear-gradient(180deg, rgba(10, 15, 31, .55), rgba(10, 15, 31, .85)), url("images/firepit.jpg") center/cover; }
+  background: linear-gradient(180deg, rgba(10, 15, 31, .55), rgba(10, 15, 31, .85)), url("images/patio-golden.jpg") center/cover; }
 .map-load:hover { border-color: var(--gold); }
 .map-load strong { font: 600 2rem var(--serif); color: var(--gold-2); }
 .map iframe { width: 100%; height: 100%; border: 0; border-radius: 2px; }
@@ -297,7 +300,7 @@ p { margin: 0 0 1em; }
 
 /* Inside & out photo band with lightbox */
 .space { background: var(--cocoa); padding: 0 0 1.4rem; }
-.space-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 3px; }
+.space-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3px; }
 .space-grid button { padding: 0; border: 0; background: none; cursor: zoom-in; overflow: hidden; aspect-ratio: 4 / 5; }
 .space-grid img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s ease, filter .8s ease; filter: brightness(.92); }
 .space-grid button:hover img, .space-grid button:focus-visible img { transform: scale(1.05); filter: brightness(1.05); }
@@ -306,7 +309,7 @@ p { margin: 0 0 1em; }
 .lightbox::backdrop { background: rgba(5, 8, 15, .92); }
 .lightbox img { max-width: 94vw; max-height: 90vh; display: block; border: 1px solid var(--line-dark); }
 .lightbox-close { position: absolute; top: 10px; right: 10px; width: 44px; height: 44px; border: 0; background: var(--gold); color: var(--cocoa); font-size: 1.6rem; cursor: pointer; }
-@media (max-width: 800px) { .space-grid { grid-template-columns: repeat(2, 1fr); } .space-grid button:last-child { grid-column: 1 / -1; aspect-ratio: 16 / 9; } }
+@media (max-width: 800px) { .space-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* Menu page */
 .menu-tabs { position: sticky; top: 92px; z-index: 5; display: flex; gap: .5rem; justify-content: center; flex-wrap: wrap; padding: .8rem 16px;
@@ -330,7 +333,7 @@ p { margin: 0 0 1em; }
 
 /* Private events band at the bottom of Home */
 .private-band { padding: 4.5rem 5vw; color: #fff; text-align: center;
-  background: linear-gradient(180deg, rgba(10, 15, 31, .6), rgba(10, 15, 31, .85)), url("images/patio.jpg") center 45%/cover; }
+  background: linear-gradient(180deg, rgba(10, 15, 31, .55), rgba(10, 15, 31, .85)), url("images/courtyard.jpg") center 55%/cover; }
 .private-band-inner { max-width: 640px; margin: 0 auto; }
 .private-band p { font-size: 1.15rem; color: var(--cream); }
 @media (max-width: 800px) {
