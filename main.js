@@ -119,7 +119,7 @@
     <div class="beat"><span class="beat-day">${esc(w.day)}</span><h3>${esc(w.title)}</h3><p>${esc(w.text)}</p></div>`).join("");
   const wineLines = $("#wine-lines");
   if (wineLines) wineLines.innerHTML = S.wine.map((w) => `<li><strong>${esc(w.title)}.</strong> ${esc(w.text)}</li>`).join("");
-  const choc = $("#choc-line"); if (choc) choc.innerHTML = `<strong>Chocolate.</strong> ${esc(S.chocolate)}`;
+  const choc = $("#choc-line"); if (choc) choc.innerHTML = `<strong>Boards, bites & chocolate.</strong> ${esc(S.chocolate)}`;
 
   // Menu page: one section per menu group, with a sticky tab bar that follows your scroll
   const menu = $("#menu");
