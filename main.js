@@ -136,7 +136,7 @@
               <div><strong>${esc(w.name)}</strong>${w.region ? ` <span class="menu-region">${esc(w.region)}</span>` : ""}${w.note ? `<p>${esc(w.note)}</p>` : ""}</div>
               <div class="prices">${price("Glass", w.glass)}${price("Bottle", w.bottle)}</div>
             </li>`).join("")}</ul>`
-          : `<p class="menu-ask">Ask the bar what's open today.</p>`}
+          : `<p class="menu-ask">Point at any bottle on the wall and ask for a glass.</p>`}
         </div>
       </section>`).join("");
     const tabs = $$(".menu-tabs a");

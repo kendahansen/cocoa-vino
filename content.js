@@ -50,7 +50,7 @@ window.SITE = {
 
   // Wine program lines (Home page "Wine & Chocolate")
   wine: [
-    { title: "Vintage Champagne", text: "There is always a vintage bottle open, from Rare Champagne down. Order a glass of something most bars only sell by the case." },
+    { title: "Vintage Champagne", text: "Every Champagne on the wall is poured by the glass, Rare included. Try a glass of something most bars only sell by the case." },
     { title: "Cult favorites", text: "Kosta Browne, Rare and the bottles collectors hunt for, right here in the village." },
     { title: "California", text: "Napa Valley and Paso Robles, from names you know like Caymus and DAOU to hard-to-find small producers." },
     { title: "France", text: "Crisp Sancerre for a sunny afternoon and classic French reds for after dark." },
@@ -63,10 +63,10 @@ window.SITE = {
   // glass / bottle: prices like "$18" (leave "" if not offered that way).
   // A section with no wines yet shows its intro line and "Ask the bar what's open today."
   menu: [
-    { id: "champagne", title: "Champagne & Sparkling", intro: "There is always a vintage bottle open. Ask which one is pouring today.", items: [] },
-    { id: "cult", title: "Cult Favorites & Local Picks", intro: "The hard-to-find bottles: cult California names like Kosta Browne, Rare Champagne, and our favorite Santa Cruz Mountains producers.", items: [] },
+    { id: "champagne", title: "Champagne & Sparkling", intro: "Every Champagne on the wall is poured by the glass, Rare included. Try a glass of something most bars only sell by the bottle.", items: [] },
+    { id: "cult", title: "Cult Favorites & Local Picks", intro: "The hard-to-find bottles: cult California names like Kosta Browne, Rare Champagne, and our favorite Santa Cruz Mountains producers. Every one of them by the glass.", items: [] },
     { id: "glass", title: "By the Glass, Any Bottle", intro: "Thanks to our Coravin, every bottle on the wall can be poured by the glass, without pulling the cork. Point at anything on the wall and try a glass.", items: [] },
-    { id: "bottle", title: "By the Bottle & To Go", intro: "Pick a bottle from the wine wall. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
+    { id: "bottle", title: "By the Bottle & To Go", intro: "Found a favorite by the glass? Take the whole bottle. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
     { id: "bites", title: "Charcuterie Boards, Bites & Chocolates", image: "images/board.jpg", imageAlt: "A cheese, charcuterie and chocolate board with two glasses of red wine at Cocoa Vino",
       intro: "Wine needs a wingman. Build a board for the table, grab a few snacks for the fire pit, and save room for chocolates.", items: [
       { name: "Cheese board", region: "", note: "A spread of soft, aged and blue cheeses with crackers, honey and fruit.", glass: "", bottle: "" },   // add price
