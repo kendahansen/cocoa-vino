@@ -47,6 +47,7 @@ window.SITE = {
     { title: "California", text: "Napa Valley and Paso Robles, from names you know like Caymus and DAOU to hard-to-find small producers." },
     { title: "France", text: "Crisp Sancerre for a sunny afternoon and classic French reds for after dark." },
     { title: "Tuscany", text: "Tuscan reds to pour while the sun drops behind the village." },
+    { title: "Wine shop", text: "Every bottle on the wall is for sale. Stop in and take one home, no table needed." },
   ],
 
   // MENU PAGE. Add each wine as { name, region, note, glass, bottle }.
@@ -56,7 +57,7 @@ window.SITE = {
   menu: [
     { id: "champagne", title: "Champagne & Sparkling", intro: "There is always a vintage bottle open. Ask which one is pouring today.", items: [] },
     { id: "glass", title: "By the Glass", intro: "Rare California, French and Tuscan pours that change with the season.", items: [] },
-    { id: "bottle", title: "By the Bottle", intro: "Pick a bottle from the wine wall and we'll open it at the bar or on the patio.", items: [] },
+    { id: "bottle", title: "By the Bottle & To Go", intro: "Pick a bottle from the wine wall. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
     { id: "bites", title: "Chocolate & Bites", intro: "Chocolate to go with your glass, and boards built for sharing at the fire pit.", items: [
       { name: "Artisan chocolate", region: "", note: "By the piece, picked to go with what's in your glass. Ask the bar for a pairing.", glass: "", bottle: "" },   // NAME the maker, add price
       { name: "Cheese & charcuterie board", region: "", note: "Built for sharing at the fire pit.", glass: "", bottle: "" },   // add price
