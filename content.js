@@ -43,7 +43,8 @@ window.SITE = {
 
   // Wine program lines (Home page "Wine & Chocolate")
   wine: [
-    { title: "Vintage Champagne", text: "There is always a vintage bottle open. Order a glass of something most bars only sell by the case." },
+    { title: "Vintage Champagne", text: "There is always a vintage bottle open, from Rare Champagne down. Order a glass of something most bars only sell by the case." },
+    { title: "Cult favorites", text: "Kosta Browne, Rare and the bottles collectors hunt for, right here in the village." },
     { title: "California", text: "Napa Valley and Paso Robles, from names you know like Caymus and DAOU to hard-to-find small producers." },
     { title: "France", text: "Crisp Sancerre for a sunny afternoon and classic French reds for after dark." },
     { title: "Tuscany", text: "Tuscan reds to pour while the sun drops behind the village." },
@@ -56,6 +57,7 @@ window.SITE = {
   // A section with no wines yet shows its intro line and "Ask the bar what's open today."
   menu: [
     { id: "champagne", title: "Champagne & Sparkling", intro: "There is always a vintage bottle open. Ask which one is pouring today.", items: [] },
+    { id: "cult", title: "Cult Favorites & Local Picks", intro: "The hard-to-find bottles: cult California names like Kosta Browne, Rare Champagne, and our favorite Santa Cruz Mountains producers.", items: [] },
     { id: "glass", title: "By the Glass", intro: "Rare California, French and Tuscan pours that change with the season.", items: [] },
     { id: "bottle", title: "By the Bottle & To Go", intro: "Pick a bottle from the wine wall. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
     { id: "bites", title: "Chocolate & Bites", intro: "Chocolate to go with your glass, and boards built for sharing at the fire pit.", items: [
