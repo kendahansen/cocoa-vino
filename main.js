@@ -238,6 +238,19 @@
   });
   document.head.appendChild(ld);
 
+  // ---------- Photo band: tap a photo to see it large ----------
+  const box = $("#lightbox");
+  if (box) {
+    $("#space").addEventListener("click", (e) => {
+      const b = e.target.closest("[data-full]");
+      if (!b) return;
+      const img = box.querySelector("img");
+      img.src = b.dataset.full; img.alt = b.querySelector("img").alt;
+      box.showModal();
+    });
+    box.addEventListener("click", (e) => { if (e.target === box || e.target.closest(".lightbox-close")) box.close(); });
+  }
+
   // ---------- Map: Google Maps only loads when asked ----------
   const map = $("#map");
   if (map) map.querySelector(".map-load").addEventListener("click", () => {
