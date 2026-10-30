@@ -67,7 +67,7 @@ window.SITE = {
     { id: "cult", title: "Cult Favorites & Local Picks", intro: "The hard-to-find bottles: cult California names like Kosta Browne, Rare Champagne, and our favorite Santa Cruz Mountains producers.", items: [] },
     { id: "glass", title: "By the Glass", intro: "Rare California, French and Tuscan pours that change with the season.", items: [] },
     { id: "bottle", title: "By the Bottle & To Go", intro: "Pick a bottle from the wine wall. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
-    { id: "bites", title: "Chocolate & Bites", intro: "Chocolate to go with your glass, and boards built for sharing at the fire pit.", items: [
+    { id: "bites", title: "Chocolate & Bites", image: "images/board.jpg", imageAlt: "A cheese, charcuterie and chocolate board with two glasses of red wine at Cocoa Vino", intro: "Chocolate to go with your glass, and boards built for sharing at the fire pit.", items: [
       { name: "Artisan chocolate", region: "", note: "By the piece, picked to go with what's in your glass. Ask the bar for a pairing.", glass: "", bottle: "" },   // NAME the maker, add price
       { name: "Cheese & charcuterie board", region: "", note: "Built for sharing at the fire pit.", glass: "", bottle: "" },   // add price
     ] },

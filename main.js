@@ -129,6 +129,7 @@
       <section class="section menu-section${n % 2 ? " section-dark" : ""}" id="${esc(sec.id)}">
         <div class="menu-inner">
           <h2>${esc(sec.title)}</h2>
+          ${sec.image ? `<img class="menu-photo" src="${esc(sec.image)}" alt="${esc(sec.imageAlt || "")}" loading="lazy">` : ""}
           <p class="menu-intro">${esc(sec.intro)}</p>
           ${sec.items.length ? `<ul class="menu-list">${sec.items.map((w) => `
             <li>

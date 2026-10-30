@@ -319,6 +319,7 @@ p { margin: 0 0 1em; }
 .menu-section { scroll-margin-top: 130px; }
 .menu-inner { max-width: 860px; margin: 0 auto; }
 .menu-intro { font-size: 1.15rem; }
+.menu-photo { width: 100%; display: block; margin: .5rem 0 1.5rem; border: 1px solid var(--line-dark); box-shadow: 0 20px 50px rgba(10, 15, 31, .25); }
 .menu-ask { font-weight: 600; color: #7d5a1e; }
 .section-dark .menu-ask { color: var(--gold-2); }
 .menu-list { list-style: none; padding: 0; margin: 1.5rem 0 0; }
