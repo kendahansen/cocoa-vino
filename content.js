@@ -68,15 +68,14 @@ window.SITE = {
     { id: "glass", title: "By the Glass, Any Bottle", intro: "Thanks to our Coravin, every bottle on the wall can be poured by the glass, without pulling the cork. Point at anything on the wall and try a glass.", items: [] },
     { id: "bottle", title: "By the Bottle & To Go", intro: "Found a favorite by the glass? Take the whole bottle. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
     { id: "bites", title: "Charcuterie Boards, Bites & Chocolates", image: "images/board.jpg", imageAlt: "A cheese, charcuterie and chocolate board with two glasses of red wine at Cocoa Vino",
-      intro: "Wine needs a wingman. Build a board for the table, grab a few snacks for the fire pit, and save room for chocolates.", items: [
+      intro: "Wine needs a wingman. Build a board for the table, grab a few bites for the fire pit, and save room for chocolates.", items: [
       { name: "Cheese board", region: "", note: "A spread of soft, aged and blue cheeses with crackers, honey and fruit.", glass: "", bottle: "" },   // add price
       { name: "Charcuterie board", region: "", note: "Prosciutto, salami and cheese, made for sharing.", glass: "", bottle: "" },   // add price
-      { name: "Snacks", region: "", note: "Olives, nuts and crackers for when you just want a little something.", glass: "", bottle: "" },   // CONFIRM what's offered
+      { name: "Bites", region: "", note: "Olives, nuts and crackers for when you just want a little something.", glass: "", bottle: "" },   // CONFIRM what's offered
       { name: "Chocolates", region: "", note: "Truffles and dark chocolate by the piece. Ask the bar what pairs with your glass.", glass: "", bottle: "" },   // NAME the maker, add price
     ] },
   ],
-  chocolate: "Cheese and charcuterie boards, snacks for the table, and chocolate by the piece. Ask the bar what pairs with your glass.",   // NAME the maker
-  charcuterie: "Cheese and charcuterie boards built for sharing at the fire pit.",
+  chocolate: "Cheese and charcuterie boards, bites for the table, and chocolates by the piece. Ask the bar what pairs with your glass.",   // NAME the maker
 
   // Events. date: YYYY-MM-DD. Sorted automatically; past dates hide on their own.
   // badge: Live Music, DJ, Bingo, Trivia, Paint Party, Class or Closed.

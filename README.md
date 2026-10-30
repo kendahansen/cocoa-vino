@@ -28,6 +28,9 @@ Almost everything lives in **`content.js`**: phone, Instagram, hours, the weekly
 ## Look
 High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost body text, velvet navy, gold and cream. The header is a solid bar with the wordmark centered, Home / Events / Menu on the left, Visit and Reserve on the right.
 
+## Brand voice
+See **`BRAND.md`** for the names we always use, the voice rules and the look.
+
 ## Voice rules (from the site direction)
 - Specific over adjective. Every sentence should have something you could photograph.
 - Second person, present tense, short. Name the nights.

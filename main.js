@@ -118,7 +118,7 @@
   if (rhythm) rhythm.innerHTML = S.weekly.map((w) => `
     <div class="beat"><span class="beat-day">${esc(w.day)}</span><h3>${esc(w.title)}</h3><p>${esc(w.text)}</p></div>`).join("");
   const wineLines = $("#wine-lines");
-  if (wineLines) wineLines.innerHTML = [...S.wine, { title: "Charcuterie boards, bites & chocolates", text: S.chocolate }]
+  if (wineLines) wineLines.innerHTML = [...S.wine, { title: "Charcuterie Boards, Bites & Chocolates", text: S.chocolate }]
     .map((w) => `<li><h3>${esc(w.title)}</h3><p>${esc(w.text)}</p></li>`).join("");
 
   // Menu page: one section per menu group, with a sticky tab bar that follows your scroll
