@@ -23,7 +23,7 @@ Almost everything lives in **`content.js`**: phone, Instagram, hours, the weekly
 **Events:** add `{ date, time, title, badge, text, image, link }`. They sort by date on their own, past dates disappear, and a series ("Multiple Dates") is one entry per date. Badges: Live Music, DJ, Bingo, Trivia, Paint Party, Class, Closed. A "Closed" entry marks that day closed everywhere on the site.
 
 ## Look
-High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost body text, gold flourishes (`images/flourish.svg`), velvet navy and cream. The header is a solid bar with the wordmark centered, Home / Events / Menu on the left, Visit and Reserve on the right.
+High-end winery: Bodoni Moda headlines, Cinzel wordmark and navigation, Jost body text, velvet navy, gold and cream. The header is a solid bar with the wordmark centered, Home / Events / Menu on the left, Visit and Reserve on the right.
 
 ## Voice rules (from the site direction)
 - Specific over adjective. Every sentence should have something you could photograph.
