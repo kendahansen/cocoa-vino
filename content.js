@@ -65,7 +65,7 @@ window.SITE = {
   menu: [
     { id: "champagne", title: "Champagne & Sparkling", intro: "There is always a vintage bottle open. Ask which one is pouring today.", items: [] },
     { id: "cult", title: "Cult Favorites & Local Picks", intro: "The hard-to-find bottles: cult California names like Kosta Browne, Rare Champagne, and our favorite Santa Cruz Mountains producers.", items: [] },
-    { id: "glass", title: "By the Glass", intro: "Rare California, French and Tuscan pours that change with the season.", items: [] },
+    { id: "glass", title: "By the Glass, Any Bottle", intro: "Thanks to our Coravin, every bottle on the wall can be poured by the glass, without pulling the cork. Point at anything on the wall and try a glass.", items: [] },
     { id: "bottle", title: "By the Bottle & To Go", intro: "Pick a bottle from the wine wall. We'll open it at the bar or on the patio, or wrap it up for you to take home.", items: [] },
     { id: "bites", title: "Charcuterie Boards, Bites & Chocolates", image: "images/board.jpg", imageAlt: "A cheese, charcuterie and chocolate board with two glasses of red wine at Cocoa Vino",
       intro: "Wine needs a wingman. Build a board for the table, grab a few snacks for the fire pit, and save room for chocolates.", items: [
