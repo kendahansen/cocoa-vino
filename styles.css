@@ -253,6 +253,7 @@ p { margin: 0 0 1em; }
       url("images/interior.jpg"), linear-gradient(180deg, #0a0f1f, #05080f);
     background-size: 100% 100%, 150% auto, 100% 100%; background-position: 0 0, 50% 76px, 0 0; }
   .hero h1 { font-size: 2.15rem; }
+  @media (max-height: 700px) { .hero { padding-top: calc(76px + 40vw); padding-bottom: 5.5rem; background-size: 100% 100%, 120% auto, 100% 100%; } .hero h1 { font-size: 1.95rem; } .lede { font-size: 1rem; margin-bottom: 1rem; } }
   .lede { font-size: 1.05rem; margin-bottom: 1.2rem; }
   .hero-info { margin-top: 1rem; }
   .section { padding: 4rem 16px; }

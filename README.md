@@ -64,6 +64,14 @@ python3 -m http.server 8000
 ```
 Then open http://localhost:8000.
 
+## Before switching to cocoavinocapitola.com (launch checklist)
+The preview is hidden from search engines. At launch:
+1. Delete the `<meta name="robots" content="noindex, ...">` line (and its comment) from every HTML page.
+2. Replace `robots.txt` with:
+   `User-agent: *` / `Allow: /` / `Sitemap: https://www.cocoavinocapitola.com/sitemap.xml`
+3. Make the `og:image` addresses point to the new domain, and add a canonical link to each page.
+4. Plan for the Wix event and reservation pages the site links to (they stop working when the domain leaves Wix).
+
 ## Live site
 https://kendahansen.github.io/cocoa-vino/ (GitHub Pages: Settings → Pages → Deploy from a branch → main → / (root)). Every push to `main` republishes it.
 
